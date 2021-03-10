@@ -1,7 +1,7 @@
 const webpack = require('webpack');
-const { addPlugins, createConfig, defineConstants, resolveAliases, env, entryPoint, setOutput, sourceMaps } = require('@webpack-blocks/webpack2');
-const babel = require('@webpack-blocks/babel6');
-const devServer = require('@webpack-blocks/dev-server2');
+const { addPlugins, createConfig, defineConstants, resolveAliases, env, entryPoint, setOutput, sourceMaps } = require('@webpack-blocks/webpack');
+const babel = require('@webpack-blocks/babel');
+const devServer = require('@webpack-blocks/dev-server');
 const postcss = require('@webpack-blocks/postcss');
 const vue = require('./build/webpack-blocks/vue');
 const eslint = require('./build/webpack-blocks/eslint');
@@ -9,7 +9,7 @@ const eslint = require('./build/webpack-blocks/eslint');
 const autoprefixer = require('autoprefixer');
 const path = require('path');
 
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('mini-css-extract-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
